@@ -1,8 +1,8 @@
-.hurry {
+.news {
     margin: 0;
-    margin-bottom: 81px;
-    
-    .hurry__heading {
+    margin-bottom: 38px;
+
+    .news__heading {
         display: block;
         margin: 0;
         margin-bottom: 20px;
@@ -15,7 +15,7 @@
         color: #000000;
     }
 
-    .hurry__list{
+    .news__list{
         display: flex;
         width: 100%;
         max-width: 1300px;
@@ -23,7 +23,7 @@
         flex-wrap: wrap;
     }
 
-    .hurry__btn{
+    .news__btn{
         display: block;
         margin: 0;
         margin-left: auto;

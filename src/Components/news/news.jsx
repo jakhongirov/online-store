@@ -1,13 +1,13 @@
 import Card from "../card/card"
 
-function Hurry() {
+function News() {
     return (
         <>
-            <section className="hurry">
+            <section className="news">
                 <div className="container">
-                    <h2 className="hurry__heading">Успей купить</h2>
+                    <h2 className="news__heading">Новинки</h2>
 
-                    <div className="hurry__list">
+                    <div className="news__list">
                         <Card />
                         <Card />
                         <Card />
@@ -22,11 +22,11 @@ function Hurry() {
                         <Card />
                     </div>
 
-                    <button className="hurry__btn">Все товары</button>
+                    <button className="news__btn">Все товары</button>
                 </div>
             </section>
         </>
     )
 }
 
-export default Hurry
+export default News
