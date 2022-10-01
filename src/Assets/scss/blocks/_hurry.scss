@@ -1,0 +1,21 @@
+.hurry {
+    .hurry__heading {
+        display: block;
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+        color: #000000;
+    }
+
+    .hurry__list{
+        display: flex;
+        width: 100%;
+        max-width: 1300px;
+        justify-content: space-between;
+    }
+}
