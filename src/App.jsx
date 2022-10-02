@@ -4,6 +4,7 @@ import Header from './Components/header/header';
 import Hurry from './Components/hurry/hurry';
 import News from './Components/news/news';
 import Recommended from './Components/recommended/recommended';
+import Quality from './Components/quality/quality';
 import Footer from './Components/footer/footer';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Hurry />
         <News />
         <Recommended />
+        <Quality />
       </main>
       <Footer />
     </>

@@ -1,5 +1,8 @@
 import logo from "../../Assets/images/logo.svg"
 import menu from "../../Assets/images/menu.svg"
+import login from "../../Assets/images/user.svg"
+import save from "../../Assets/images/like-heart.svg"
+import basket from "../../Assets/images/shop-cart.svg"
 
 function Header() {
     return (
@@ -18,8 +21,12 @@ function Header() {
                         </div>
                         <div className="header__lang-box">
                             <select className="lang-box__select">
-                                <option value="ru">| Русский | ₽</option>
-                                <option value="uz">| Uzbek | SUM</option>
+                                <option value="ru">
+                                    Русский | ₽
+                                </option>
+                                <option value="uz">
+                                    Uzbek | SUM
+                                </option>
                             </select>
                         </div>
                     </div>
@@ -35,13 +42,24 @@ function Header() {
                         </div>
                         <div className="header__bottom-box__search-box">
                             <input className="header__bottom-box__search-input" type="search" name="search" />
-                            <button className="header__bottom-box__search-btn">Везде</button>
+                            <button className="header__bottom-box__search-btn">
+                                Везде
+                            </button>
                         </div>
 
                         <ul className="header__bottom-box__list">
-                            <li className="header__bottom-box__item">login</li>
-                            <li className="header__bottom-box__item">save</li>
-                            <li className="header__bottom-box__item">basket</li>
+                            <li className="header__bottom-box__item">
+                                <img className="header__bottom-box__item__img" src={login} alt="user" width={26} height={26} />
+                                <p className="header__bottom-box__item__text">Войти</p>
+                            </li>
+                            <li className="header__bottom-box__item">
+                                <img className="header__bottom-box__item__img" src={save} alt="like-heart" width={27} height={26} />
+                                <p className="header__bottom-box__item__text">Избранное</p>
+                            </li>
+                            <li className="header__bottom-box__item">
+                                <img className="header__bottom-box__item__img" src={basket} alt="basket" width={26} height={26} />
+                                <p className="header__bottom-box__item__text">Корзина</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
