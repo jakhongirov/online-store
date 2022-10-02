@@ -1,0 +1,56 @@
+.shops {
+    display: block;
+    margin: 0;
+    margin-bottom: 100px;
+
+    .shops__heading {
+        display: block;
+        margin: 0;
+        margin-bottom: 27px;
+        padding: 0;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 33px;
+        color: #000000;
+    }
+
+    .shops__box {
+        display: flex;
+        width: 100%;
+        max-width: 1300px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .shops__list {
+        display: flex;
+        width: 100%;
+        max-width: 900px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .shops__anons {
+        display: block;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .shops__anons__item{
+        display: block;
+        width: 100%;
+        max-width: 296px;
+        margin-bottom: 26px;
+    }
+
+    .shops__btn {
+        display: block;
+        margin: 0;
+        margin-left: auto;
+        padding: 14px 55px;
+        border: 2px solid;
+        background: #ffff;
+    }
+}

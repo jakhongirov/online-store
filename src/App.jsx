@@ -3,6 +3,7 @@ import './App.scss';
 import Header from './Components/header/header';
 import Hurry from './Components/hurry/hurry';
 import News from './Components/news/news';
+import Shops from './Components/shops/shops';
 import Recommended from './Components/recommended/recommended';
 import Quality from './Components/quality/quality';
 import Watched from './Components/watched/watched';
@@ -15,6 +16,7 @@ function App() {
       <main className='main'>
         <Hurry />
         <News />
+        <Shops />
         <Recommended />
         <Quality />
         <Watched />
