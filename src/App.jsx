@@ -5,6 +5,7 @@ import Hurry from './Components/hurry/hurry';
 import News from './Components/news/news';
 import Recommended from './Components/recommended/recommended';
 import Quality from './Components/quality/quality';
+import Watched from './Components/watched/watched';
 import Footer from './Components/footer/footer';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <News />
         <Recommended />
         <Quality />
+        <Watched />
       </main>
       <Footer />
     </>

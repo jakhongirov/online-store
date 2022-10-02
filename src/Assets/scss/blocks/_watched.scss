@@ -1,0 +1,29 @@
+.watched {
+    display: block;
+    margin: 0;
+    padding: 0;
+    padding-top: 28px;
+    padding-bottom: 53px;
+    // background: linear-gradient(96.78deg, #F64D4D -57.09%, #4D5EF6 101.17%);
+    // opacity: 0.1;
+
+    .watched__heading {
+        display: block;
+        margin: 0;
+        margin-bottom: 40px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 35px;
+        color: #000000;
+    }
+
+    .watched__list{
+        display: flex;
+        width: 100%;
+        max-width: 1300px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,47 @@
+.card-flex {
+    display: flex;
+    width: 100%;
+    max-width: 240px;
+    justify-content: space-between;
+    margin: 0;
+    margin-right: 18px;
+    padding: 36px 14px;
+    background: #ffffff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    .card-flex__img-box {
+        display: block;
+        width: 108px;
+        height: 108px;
+        margin: 0;
+    }
+
+    .card-flex__info {
+        width: 100%;
+        max-width: 80px;
+    }
+
+    .card-flex__text {
+        display: block;
+        margin: 0;
+        margin-bottom: 14px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 124.19%;
+        color: #000000;
+    }
+
+    .card-flex__price {
+        display: block;
+        margin: 0;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+    }
+}
