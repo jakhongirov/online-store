@@ -1,10 +1,10 @@
 import logo from "../../Assets/images/logo.svg"
-import menu from "../../Assets/images/menu.svg"
+import Menu from "../../Assets/images/menu.svg"
 import login from "../../Assets/images/user.svg"
-import save from "../../Assets/images/like-heart.svg"
+import Save from "../../Assets/images/like-heart.svg"
 import basket from "../../Assets/images/shop-cart.svg"
 
-function Header() {
+function Header({ menu, setMenu, save }) {
     return (
         <>
             <header className="header">
@@ -33,8 +33,10 @@ function Header() {
 
                     <div className="header__bottom-box">
                         <div className="header__bottom-box__menu-box">
-                            <button className="header__bottom-box__btn">
-                                <img src={menu} alt="menu" width={16} height={16} />
+                            <button className="header__bottom-box__btn"
+                                onClick={() => setMenu(!menu)}
+                            >
+                                <img src={Menu} alt="menu" width={16} height={16} />
                             </button>
                             <a href="/">
                                 <img src={logo} alt="logo" width={150} height={40} />
@@ -53,12 +55,14 @@ function Header() {
                                 <p className="header__bottom-box__item__text">Войти</p>
                             </li>
                             <li className="header__bottom-box__item">
-                                <img className="header__bottom-box__item__img" src={save} alt="like-heart" width={27} height={26} />
+                                <img className="header__bottom-box__item__img" src={Save} alt="like-heart" width={27} height={26} />
                                 <p className="header__bottom-box__item__text">Избранное</p>
+                                <span className="save__count">0</span>
                             </li>
                             <li className="header__bottom-box__item">
                                 <img className="header__bottom-box__item__img" src={basket} alt="basket" width={26} height={26} />
                                 <p className="header__bottom-box__item__text">Корзина</p>
+                                <span className="save__count">{save}</span>
                             </li>
                         </ul>
                     </div>

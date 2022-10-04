@@ -1,0 +1,93 @@
+.intro {
+    display: block;
+    margin: 0;
+    margin-bottom: 30px;
+
+    .container {
+        display: flex;
+        width: 100%;
+        max-width: 1300px;
+        justify-content: space-between;
+    }
+
+    .mySwiper {
+        display: block !important;
+        width: 100% !important;
+        max-width: 900px !important;
+        height: 100% !important;
+        max-height: 350px !important;
+    }
+
+    .intro__anons {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .intro__anons__item {
+        display: block;
+        width: 100%;
+        max-width: 295px;
+    }
+
+    .intro__anons__item + .intro__anons__item {
+        margin-top: 24px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        // width: calc(var(--swiper-navigation-size) / 44 * 27);
+        // height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffff;
+        background: linear-gradient(96.78deg, #f64d4d -57.09%, #4d5ef6 101.17%);
+        border-radius: 166.667px;
+    }
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+        background: linear-gradient(96.78deg, rgba(246, 77, 77, 0.2) -57.09%, rgba(77, 94, 246, 0.2) 101.17%) !important;
+        border-radius: 166.667px !important;
+        // cursor: auto;
+        // pointer-events: none;
+        color: #000000 !important;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-family: swiper-icons;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: none !important;
+        letter-spacing: 0;
+        text-transform: none;
+        font-variant: initial;
+        line-height: 1;
+        text-align: center;
+    }
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: 10px;
+        right: auto;
+    }
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+        content: "prev";
+    }
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: 10px;
+        left: auto;
+    }
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+        content: "next";
+    }
+}

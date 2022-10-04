@@ -1,6 +1,6 @@
 import Card from "../card/card"
 
-function Hurry() {
+function Hurry({ setSave, save }) {
     return (
         <>
             <section className="hurry">
@@ -8,18 +8,18 @@ function Hurry() {
                     <h2 className="hurry__heading">Успей купить</h2>
 
                     <div className="hurry__list">
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
-                        <Card />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
                     </div>
 
                     <button className="hurry__btn">Все товары</button>

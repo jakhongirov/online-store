@@ -1,4 +1,4 @@
-function Card(item) {
+function Card({ item, setSave, save }) {
     return (
         <>
             <div className="card">
@@ -20,7 +20,8 @@ function Card(item) {
                         Футболка80 с дизайнерским принтом Super Shape 0201 абстракция на фиолетовом фоне
                     </p>
 
-                    <button className="hover-bx__btn">
+                    <button className="hover-bx__btn"
+                        onClick={() => setSave(++save)}>
                         В корзину
                     </button>
                 </div>

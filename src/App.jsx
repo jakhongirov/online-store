@@ -1,6 +1,7 @@
 import './App.scss';
 
 import Header from './Components/header/header';
+import Intro from './Components/intro/intro';
 import Hurry from './Components/hurry/hurry';
 import News from './Components/news/news';
 import Shops from './Components/shops/shops';
@@ -8,16 +9,21 @@ import Recommended from './Components/recommended/recommended';
 import Quality from './Components/quality/quality';
 import Watched from './Components/watched/watched';
 import Footer from './Components/footer/footer';
+import { useState } from 'react';
 
 function App() {
+  const [menu, setMenu] = useState(false)
+  const [save, setSave] = useState(0)
+
   return (
     <>
-      <Header />
+      <Header setMenu={setMenu} save={save} menu={menu} />
       <main className='main'>
-        <Hurry />
-        <News />
+        <Intro menu={menu} />
+        <Hurry setSave={setSave} save={save} />
+        <News setSave={setSave} save={save} />
         <Shops />
-        <Recommended />
+        <Recommended setSave={setSave} save={save} />
         <Quality />
         <Watched />
       </main>

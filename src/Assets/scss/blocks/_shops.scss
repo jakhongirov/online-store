@@ -35,14 +35,17 @@
     .shops__anons {
         display: block;
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
     }
 
-    .shops__anons__item{
+    .shops__anons__item {
         display: block;
         width: 100%;
         max-width: 296px;
-        margin-bottom: 26px;
+    }
+
+    .shops__anons__item + .shops__anons__item {
+        margin-top: 26px;
     }
 
     .shops__btn {

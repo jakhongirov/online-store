@@ -116,6 +116,7 @@
             justify-content: space-between;
 
             .header__bottom-box__item {
+                position: relative;
                 display: block;
                 margin: 0;
                 padding: 0;
@@ -133,6 +134,25 @@
                     font-size: 14px;
                     line-height: 16px;
                     color: #000000;
+                }
+
+                .save__count {
+                    position: absolute;
+                    top: -8%;
+                    right: 18%;
+                    display: block;
+                    width: 12px;
+                    height: 12px;
+                    padding-top: 2px;
+                    padding-bottom: 4px;
+                    font-family: "Roboto";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 7px;
+                    line-height: 8px;
+                    color: #ffffff;
+                    border-radius: 50%;
+                    background: #ff4343;
                 }
             }
         }
