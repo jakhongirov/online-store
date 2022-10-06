@@ -4,7 +4,7 @@ import login from "../../Assets/images/user.svg"
 import Save from "../../Assets/images/like-heart.svg"
 import basket from "../../Assets/images/shop-cart.svg"
 
-function Header({ menu, setMenu, save }) {
+function Header({ menu, setMenu, save, setCategories }) {
     return (
         <>
             <header className="header">
@@ -34,7 +34,7 @@ function Header({ menu, setMenu, save }) {
                     <div className="header__bottom-box">
                         <div className="header__bottom-box__menu-box">
                             <button className="header__bottom-box__btn"
-                                onClick={() => setMenu(!menu)}
+                                onClick={() => { setMenu(!menu); setCategories(false) }}
                             >
                                 <img src={Menu} alt="menu" width={16} height={16} />
                             </button>

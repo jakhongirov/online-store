@@ -1,6 +1,6 @@
 import downArrow from "../../Assets/images/down-arrow.svg"
 
-function Categories({ menu }) {
+function Categories({ menu, setCategories, categories }) {
     return (
         <div className={menu ? "categories" : "close"}>
             <div className="categories__heading-box">
@@ -37,7 +37,7 @@ function Categories({ menu }) {
                 </li>
             </ul>
 
-            <button className="categories__btn">
+            <button className="categories__btn" onClick={() => setCategories(!categories)}>
                 Все категории
                 <img src={downArrow} alt="down Arrow" width={8} height={4} />
             </button>
