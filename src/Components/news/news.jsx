@@ -22,7 +22,9 @@ function News({ save, setSave }) {
                         <Card setSave={setSave} save={save} />
                     </div>
 
-                    <button className="news__btn">Все товары</button>
+                    <button className="news__btn">
+                        <span>Все товары</span>
+                    </button>
                 </div>
             </section>
         </>

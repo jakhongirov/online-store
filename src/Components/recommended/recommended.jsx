@@ -1,6 +1,6 @@
 import Card from "../card/card"
 
-function Recommended({save, setSave}) {
+function Recommended({ save, setSave }) {
     return (
         <section className="recommended">
             <div className="container">
@@ -43,7 +43,9 @@ function Recommended({save, setSave}) {
                     <Card setSave={setSave} save={save} />
                 </div>
 
-                <button className="recommended__btn">Все товары</button>
+                <button className="recommended__btn">
+                    <span>Все товары</span>
+                </button>
             </div>
         </section>
     )

@@ -15,7 +15,7 @@
         color: #000000;
     }
 
-    .news__list{
+    .news__list {
         display: flex;
         width: 100%;
         max-width: 1300px;
@@ -23,12 +23,25 @@
         flex-wrap: wrap;
     }
 
-    .news__btn{
+    .news__btn {
         display: block;
         margin: 0;
         margin-left: auto;
-        padding: 14px 55px;
-        border: 2px solid;
-        background: #ffff;
+        padding: 2px;
+        border: none;
+        background: linear-gradient(96.78deg, #f64d4d -57.09%, #4d5ef6 101.17%);
+
+        span {
+            display: block;
+            width: 100%;
+            padding: 12px 50px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #000000;
+            background: #ffff;
+        }
     }
 }

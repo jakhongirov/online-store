@@ -27,7 +27,16 @@ function Shops() {
                     </div>
                 </div>
 
-                <button className="shops__btn">Все товары</button>
+                <div className="shops__box">
+                    <CardBrend />
+                    <CardBrend />
+                    <CardBrend />
+                    <CardBrend />
+                </div>
+
+                <button className="shops__btn">
+                    <span>Все товары</span>
+                </button>
 
             </div>
         </section>

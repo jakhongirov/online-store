@@ -22,7 +22,9 @@ function Hurry({ setSave, save }) {
                         <Card setSave={setSave} save={save} />
                     </div>
 
-                    <button className="hurry__btn">Все товары</button>
+                    <button className="hurry__btn">
+                        <span>Все товары</span>
+                    </button>
                 </div>
             </section>
         </>
