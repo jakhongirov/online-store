@@ -1,6 +1,9 @@
+import { useState } from "react"
 import Card from "../card/card"
 
 function Recommended({ save, setSave }) {
+    const [open, setOpen] = useState(false)
+
     return (
         <section className="recommended">
             <div className="container">
@@ -31,6 +34,23 @@ function Recommended({ save, setSave }) {
                     <Card setSave={setSave} save={save} />
                     <Card setSave={setSave} save={save} />
                     <Card setSave={setSave} save={save} />
+                </div>
+
+                <div className={open ? "recommended__list" : "close"}>
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
+                    <Card setSave={setSave} save={save} />
                     <Card setSave={setSave} save={save} />
                     <Card setSave={setSave} save={save} />
                     <Card setSave={setSave} save={save} />
@@ -43,8 +63,10 @@ function Recommended({ save, setSave }) {
                     <Card setSave={setSave} save={save} />
                 </div>
 
-                <button className="recommended__btn">
-                    <span>Все товары</span>
+                <button className="recommended__btn" onClick={() => setOpen(!open)}>
+                    <span>
+                        {open ? "Закрыть" : "Все товары"}
+                    </span>
                 </button>
             </div>
         </section>

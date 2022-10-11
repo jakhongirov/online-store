@@ -1,6 +1,9 @@
+import { useState } from "react"
 import Card from "../card/card"
 
 function Hurry({ setSave, save }) {
+    const [open, setOpen] = useState(false)
+
     return (
         <>
             <section className="hurry">
@@ -22,8 +25,25 @@ function Hurry({ setSave, save }) {
                         <Card setSave={setSave} save={save} />
                     </div>
 
-                    <button className="hurry__btn">
-                        <span>Все товары</span>
+                    <div className={open ? "hurry__list" : "close"}>
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                        <Card setSave={setSave} save={save} />
+                    </div>
+
+                    <button className="hurry__btn" onClick={() => setOpen(!open)}>
+                        <span>
+                            {open ? "Закрыть" : "Все товары"}
+                        </span>
                     </button>
                 </div>
             </section>

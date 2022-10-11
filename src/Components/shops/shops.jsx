@@ -1,6 +1,9 @@
+import { useState } from "react"
 import CardBrend from "../card-brend/card-brend"
 
 function Shops() {
+    const [open, setOpen] = useState(false)
+
     return (
         <section className="shops">
             <div className="container">
@@ -34,8 +37,21 @@ function Shops() {
                     <CardBrend />
                 </div>
 
-                <button className="shops__btn">
-                    <span>Все товары</span>
+                <div className={open ? "shops__box" : "close"}>
+                    <CardBrend />
+                    <CardBrend />
+                    <CardBrend />
+                    <CardBrend />
+                    <CardBrend />
+                    <CardBrend />
+                    <CardBrend />
+                    <CardBrend />
+                </div>
+
+                <button className="shops__btn" onClick={() => setOpen(!open)}>
+                    <span>
+                        {open ? "Закрыть" : "Все товары"}
+                    </span>
                 </button>
 
             </div>
