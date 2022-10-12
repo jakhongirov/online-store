@@ -31,10 +31,22 @@ function Intro({ menu, setCategories, categories }) {
 
                     <div className={menu ? "close" : "intro__anons"}>
                         <div className="intro__anons__item">
-                            <img src="https://api.sergelihokimiyati.uz/media/news/bilbordova-bilbordska-vushna-reklama_CUvUVsp.jpeg" alt="anons" width={296} height={208} />
+                            <a href="https://asaxiy.uz/">
+                                <img
+                                    src="https://www.zdnet.com/a/img/resize/3b0288ccb267455a19d47d7c740a9d6b6f11ebc2/2020/11/22/ca2302cc-c59f-4ae2-9091-6340e4f120e3/iphone-12-mini1.jpg?auto=webp&fit=crop&height=900&width=1200"
+                                    alt="anons"
+                                    width={296}
+                                    height={208} />
+                            </a>
                         </div>
                         <div className="intro__anons__item">
-                            <img src="https://api.sergelihokimiyati.uz/media/news/bilbordova-bilbordska-vushna-reklama_CUvUVsp.jpeg" alt="anons" width={296} height={208} />
+                            <a href="https://asaxiy.uz/">
+                                <img 
+                                src="https://api.sergelihokimiyati.uz/media/news/bilbordova-bilbordska-vushna-reklama_CUvUVsp.jpeg" 
+                                alt="anons" 
+                                width={296} 
+                                height={208} />
+                            </a>
                         </div>
                     </div>
                 </div>
